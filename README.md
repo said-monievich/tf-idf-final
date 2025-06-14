@@ -52,7 +52,7 @@
    Swagger UI: http://localhost:8000/docs
    ReDoc: http://localhost:8000/redoc
 
-4. 
+
 
 ## 🚀 Локально
 
