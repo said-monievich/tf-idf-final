@@ -62,9 +62,12 @@
 ## 🚀 Локально
 
 pip install -r requirements.txt
+
 uvicorn main:app --reload
 
+
 Swagger UI доступен по адресу:
+
 http://localhost:8000/docs
 
 
