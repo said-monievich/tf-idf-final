@@ -37,34 +37,6 @@
 
 ---
 
-## 📁 Структура проекта
-
-.
-├── CHANGELOG.md
-├── DB-DIAGRAM.png
-├── Dockerfile
-├── README.md
-├── __init__.py
-├── database.py
-├── docker-compose.yml
-├── lestaapp.db
-├── main.py
-├── models.py
-├── requirements.txt
-├── routers
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── auth.py
-│   ├── collections.py
-│   ├── documents.py
-│   └── users.py
-├── schemas.py
-├── services
-│   └── statistics.py
-├── structure.txt
-└── uploads
-
----
 
 ## 🚀 Установка и запуск
 
