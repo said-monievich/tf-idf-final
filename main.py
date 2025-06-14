@@ -4,6 +4,7 @@ from database import engine
 from routers import auth, documents, admin, users, collections
 from services import statistics
 
+
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=engine)

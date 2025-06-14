@@ -56,8 +56,6 @@ async def change_password(user: user_dependency, db: db_dependency, user_verific
 
 
 #DELETE /user/<user_id> — удаление пользователя
-#Удаление аккаунта ведёт к завершению сессий пользователя
-#При удалении пользователя удаляются все его файлы и коллекции.
 @router.delete("/delete/", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_current_user(
     db: db_dependency,

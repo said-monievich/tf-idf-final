@@ -145,7 +145,7 @@ os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 #GET /documents/<document_id> — получить содержимое документа;
 # noinspection PyTypeChecker
-@router.get("/documents/{document_id}", status_code=status.HTTP_200_OK)
+@router.get("/{document_id}", status_code=status.HTTP_200_OK)
 async def read_document(
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),  # Убедись, что get_db импортирован
@@ -180,7 +180,7 @@ async def read_document(
 
 
 #GET /documents/<document_id>/statistics — получить статистику по данному документу (с учётом коллекции);
-@router.get("/documents/{document_id}/statistics", response_model=List[Statistic], status_code=status.HTTP_200_OK)
+@router.get("/{document_id}/statistics", response_model=List[Statistic], status_code=status.HTTP_200_OK)
 async def get_statistics(
     document_id: int,
     user: User = Depends(get_current_user),
@@ -252,7 +252,7 @@ async def get_statistics(
 
 #DELETE /documents/<document_id> — удалить документ
 # noinspection PyTypeChecker
-@router.delete("/document/{document_id}", status_code=status.HTTP_204_NO_CONTENT)
+@router.delete("/{document_id}", status_code=status.HTTP_204_NO_CONTENT)
 async def delete_document(
     user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
