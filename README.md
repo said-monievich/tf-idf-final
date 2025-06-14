@@ -42,14 +42,19 @@
 
 Запуск проекта с Docker Compose
 1. Склонируйте репозиторий и перейдите в папку с проектом:
+   
     git clone https://github.com/said-monievich/tf-idf-final.git
+   
     cd tf-idf-final
 
 2. Запустите проект командой:
+   
    docker-compose up --build
 
 3. Откройте в браузере:
+   
    Swagger UI: http://localhost:8000/docs
+   
    ReDoc: http://localhost:8000/redoc
 
 
